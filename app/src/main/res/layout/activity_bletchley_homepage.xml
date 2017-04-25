@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bletchley_homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background3"
+    tools:context="com.example.usman.bletcheypark.BletchleyHomepage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button12"
+        android:background="@drawable/abns"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button10"
+        android:background="@drawable/abs"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button9"
+        android:background="@drawable/ss"
+        android:layout_alignBaseline="@+id/button7"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:background="@drawable/anb"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/button10"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button17"
+        android:background="@drawable/njk"
+        android:layout_alignBaseline="@+id/button8"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/scanItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button10"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button10"
+        android:background="@color/colorAccent"
+        android:text="Check In/Out" />
+
+    <Button
+        android:text="Directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/directionBTN"
+        android:layout_below="@+id/button12"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/button12"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button7"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button7"
+        android:background="@color/colorAccent"
+        android:text="Bletchley Feeds" />
+
+    <Button
+        android:text="Explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shareButton"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/exploreBTN"
+        android:layout_alignStart="@+id/button9"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8"
+        android:background="@drawable/leavefeedback"
+        android:layout_below="@+id/shareButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:id="@+id/bletchleyInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/button17"
+        android:layout_below="@+id/button17"
+        android:background="@color/colorAccent"
+        android:text="Bletchley Info" />
+
+    <Button
+        android:text="Feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedbackbutton"
+        android:layout_below="@+id/button17"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/button8"
+        android:background="@color/colorAccent" />
+
+</RelativeLayout>
+

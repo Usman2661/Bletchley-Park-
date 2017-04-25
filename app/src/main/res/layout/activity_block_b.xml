@@ -1,0 +1,174 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="3000px"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.usman.bletcheypark.BlockB">
+
+        <Button
+            android:id="@+id/button40"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="@drawable/hut1113"
+            android:layout_below="@+id/textView35"
+            android:layout_alignStart="@+id/textView27" />
+
+
+        <Button
+            android:id="@+id/scanPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="138dp"
+            android:text="Scan Items"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Out"
+            android:layout_alignBaseline="@+id/scanPage"
+            android:layout_alignBottom="@+id/scanPage"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/scanPage"
+            android:layout_marginTop="37dp"
+            android:text="The museum in Block B contains a number of fascinating exhibits including:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView28"
+            android:text="--The Life and Works of Alan Turing gallery"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView30"
+            android:text="--A Home Front exhibition – How people lived in WW2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView33"
+            android:text="--The Japanese Challenge: Breaking the Japanese Codes "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView32"
+            android:text="--Bletchley Park Timeline – How the work of Bletchley Park influenced key WW2 events "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView29"
+            android:text="--From Intercept to Action – the Codebreaking process explained "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView20"
+            android:text="--The largest and most comprehensive public display of Enigma machines in the world"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView26"
+            android:text="--The world’s only fully operational Bombe rebuild – the electro-mechanical device used to mechanise the process of breaking Enigma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView7"
+            android:text="--Hitler’s “Unbreakable” Cipher Machine: Gallery dedicated to telling the story of the breaking of the Lorenz cipher"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have You Seen:"
+            android:textSize="36sp"
+            android:layout_below="@+id/button40"
+            android:layout_toStartOf="@+id/checkout"
+            android:layout_marginTop="60dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView31"
+            android:text="Have You Seen:"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/checkout"
+            android:layout_centerHorizontal="true"
+            android:text="You Are Currently in Block B"
+            android:textSize="24sp" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_alignStart="@+id/textView27"
+            android:layout_below="@+id/textView27"
+            android:layout_marginTop="18dp" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+
+
+

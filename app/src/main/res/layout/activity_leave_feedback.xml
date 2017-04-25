@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg27"
+    tools:context="com.example.usman.bletcheypark.leaveFeedback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rsz_feedbackleav"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rsz_feedbackcheck"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/leavingFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button19"
+            android:layout_alignStart="@+id/button19"
+            android:layout_below="@+id/button19"
+            android:background="@color/colorAccent"
+            android:text="Leave Feedback " />
+
+        <Button
+            android:id="@+id/showFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button22"
+            android:background="@color/colorAccent"
+            android:text="Check Feedback "
+            android:layout_alignEnd="@+id/button22" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="176dp"
+            android:text="Did you know?"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView6"
+            android:text="1.Bletchley Park was the Buckinghamshire house and estate that played host to Britain’s code-breaking triumphs – from the success in breaking the ‘insoluble’ Nazi Enigma codes to its incredible work on Japanese cryptology."
+            android:textColor="@color/cardview_light_background"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="30dp"
+            android:text="1.It is simply impossible to know – largely because Bletchley was so mind-bogglingly successful. They read messages from the German army, navy, air force, secret service… even messages from the desk of Hitler himself. Countless thousands upon thousands of communications."
+            android:textColor="@color/cardview_light_background"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

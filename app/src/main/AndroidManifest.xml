@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.usman.bletcheypark">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adminHomepage" />
+        <activity android:name=".createBarcodes" />
+        <activity android:name=".directionsHomepage" />
+        <activity android:name=".exploreHomepage" />
+        <activity android:name=".leaveFeedback" />
+        <activity android:name=".scanItems" />
+        <activity android:name=".shareMedia" />
+        <activity android:name=".sendEmail" />
+        <activity android:name=".RegisterPage" />
+        <activity android:name=".BletchleyHomepage" />
+        <activity android:name=".ShowUser" />
+        <activity android:name=".CheckIn" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".directionsHomepage$EmailAttach" />
+        <activity android:name=".postEvents" />
+        <activity android:name=".feedbacklist" />
+        <activity android:name=".sendFeedback" />
+        <activity android:name=".mansionPage" />
+        <activity android:name=".hut8" />
+        <activity android:name=".hut11" />
+        <activity android:name=".virtualTour" />
+        <activity android:name=".feedUpload" />
+        <activity android:name=".FeedsPage" />
+        <activity android:name=".eventsList" />
+        <activity android:name=".PanoramaVideoActivity" />
+        <activity android:name=".newPage" />
+        <activity android:name=".BlockB" />
+        <activity android:name=".Hut12" />
+        <activity
+            android:name=".navigation"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BletchleyPlaces" />
+        <activity android:name=".createAdmin" />
+        <activity android:name=".socialShare" />
+        <activity android:name=".searchPlaces" />
+        <activity android:name=".PlacePicker" />
+        <activity android:name=".PlacePickerActivity" />
+        <activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2" />
+        <activity android:name=".infoPage" />
+        <activity android:name=".ticket" />
+        <activity android:name=".newsBletchley"></activity>
+    </application>
+
+</manifest>

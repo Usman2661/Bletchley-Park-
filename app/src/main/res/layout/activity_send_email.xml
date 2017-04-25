@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.usman.bletcheypark.sendEmail"
+    android:weightSum="1">
+
+
+<EditText
+        android:ems="10"
+        android:hint="Enter gmail-id"
+        android:id="@+id/et_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:ems="10"
+        android:hint="Enter Subject"
+        android:id="@+id/et_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:ems="10"
+        android:hint="Enter Message text"
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_width="wrap_content"
+        android:text="Send Mail"
+        android:background="@color/zxing_custom_result_view" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/asjshjkj"
+        android:id="@+id/sendImage" />
+
+</LinearLayout>
+
+
+

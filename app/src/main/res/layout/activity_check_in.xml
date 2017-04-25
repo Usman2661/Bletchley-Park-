@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background6"
+    tools:context="com.example.usman.bletcheypark.CheckIn">
+
+    <Button
+        android:id="@+id/checkIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/butongss"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/butongss"
+        android:background="@color/colorAccent"
+        android:text="Check In" />
+
+    <Button
+        android:id="@+id/butongss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rcheckin" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkIN"
+        android:layout_marginTop="19dp"
+        android:text="User Activity FAQ........"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView11"
+        android:text="Why is check-in and chec out used?"
+        android:textColor="@color/zxing_viewfinder_laser"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="51dp"
+        android:text="TextView"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView12"
+        android:text="While at the Museum using the check-in andout feature will alow you to check in to different Places. When you check in to a specific place information regarding that place will be shown"
+        android:textColor="@color/cardview_light_background" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView15"
+        android:text="Is the data saved?"
+        android:textColor="@color/zxing_viewfinder_laser" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView16"
+        android:text="Your activity can be tracked via using this feature. This will save the the exact time you spent in different places in the musuem which can be tracked in my user activity. "
+        android:textColor="@color/cardview_light_background" />
+
+    <Button
+        android:id="@+id/viewPlaces1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/adminfourth" />
+
+    <Button
+        android:id="@+id/viewPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/viewPlaces1"
+        android:layout_below="@+id/butongss"
+        android:background="@color/colorAccent"
+        android:text="View All Places" />
+</RelativeLayout>

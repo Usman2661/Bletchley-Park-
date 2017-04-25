@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_share_media_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background6"
+    tools:context="com.example.usman.bletcheypark.shareMedia">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/checkFeeds1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/shareSocial"
+            android:layout_marginTop="41dp"
+            android:background="@drawable/rcheck" />
+
+        <Button
+            android:id="@+id/sharebutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rfeeds"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/shareSocial1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rsocial" />
+
+        <Button
+            android:id="@+id/sharebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/sharebutton1"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sharebutton1"
+            android:background="@color/colorAccent"
+            android:text="Post on Bletchley Feeds" />
+
+        <Button
+            android:id="@+id/checkFeeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/checkFeeds1"
+            android:layout_marginTop="98dp"
+            android:background="@color/colorAccent"
+            android:text="Check Bletchley Feeds"
+            android:layout_alignEnd="@+id/checkFeeds1" />
+
+        <Button
+            android:id="@+id/shareSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Post Social Media"
+            android:layout_below="@+id/sharebutton1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/shareSocial1" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
