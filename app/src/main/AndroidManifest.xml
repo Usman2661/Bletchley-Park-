@@ -47,9 +47,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
         <!--
      ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -83,12 +80,12 @@
         <activity android:name=".searchPlaces" />
         <activity android:name=".PlacePicker" />
         <activity android:name=".PlacePickerActivity" />
-        <activity
-            android:name=".MapsActivity2"
-            android:label="@string/title_activity_maps2" />
         <activity android:name=".infoPage" />
         <activity android:name=".ticket" />
-        <activity android:name=".newsBletchley"></activity>
+        <activity android:name=".newsBletchley" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>

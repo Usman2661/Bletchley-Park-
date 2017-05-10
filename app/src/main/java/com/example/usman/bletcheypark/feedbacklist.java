@@ -53,20 +53,23 @@ public class feedbacklist extends ActionBarActivity {
         getData();
     }
 
-
+    //Method to show the list of feedback
     protected void showList(){
         try {
+            //Createing a new JSON object to get the results
             JSONObject jsonObj = new JSONObject(myJSON);
             peoples = jsonObj.getJSONArray(TAG_RESULTS);
 
+            //For loop to retrieve all results
             for(int i=0;i<peoples.length();i++){
                 JSONObject c = peoples.getJSONObject(i);
+                //Storing the values in the strings
                 String id = c.getString(TAG_ID);
                 String name = c.getString(TAG_NAME);
                 String address = c.getString(TAG_ADD);
 
                 HashMap<String,String> persons = new HashMap<String,String>();
-
+                //Putting the results in the variables
                 persons.put(TAG_ID,id);
                 persons.put(TAG_NAME,name);
                 persons.put(TAG_ADD,address);

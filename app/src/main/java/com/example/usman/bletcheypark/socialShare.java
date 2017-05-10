@@ -21,13 +21,15 @@ public class socialShare extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social_share);
 
+        //Creating the share button and setting the action listener
         Button share=(Button) findViewById(R.id.Share);
         share.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view){
 
+                //Getting the text input in the field from the user
                 editTextUsername = (EditText) findViewById(R.id.nameText);
-
                 username = editTextUsername.getText().toString().trim();
+                //Opening the share intent to show all social media options along with passing the textfield text
                 Intent share = new Intent(Intent.ACTION_SEND);
                 share.setType("text/plain");
                 share.putExtra(Intent.EXTRA_TEXT, username);

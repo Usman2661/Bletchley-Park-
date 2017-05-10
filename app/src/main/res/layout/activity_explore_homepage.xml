@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/bg27"
+    android:background="@drawable/official1"
     tools:context="com.example.usman.bletcheypark.exploreHomepage">
 
     <RelativeLayout
@@ -62,7 +62,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="176dp"
             android:text="Did you know?"
-            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textColor="@color/bb_darkBackgroundColor"
             android:textSize="24sp" />
 
         <TextView
@@ -72,7 +72,7 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/textView6"
             android:text="1.Bletchley Park was the Buckinghamshire house and estate that played host to Britain’s code-breaking triumphs – from the success in breaking the ‘insoluble’ Nazi Enigma codes to its incredible work on Japanese cryptology."
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/bb_darkBackgroundColor"
             android:textSize="14sp" />
 
         <TextView
@@ -83,7 +83,7 @@
             android:layout_below="@+id/textView8"
             android:layout_marginTop="30dp"
             android:text="1.It is simply impossible to know – largely because Bletchley was so mind-bogglingly successful. They read messages from the German army, navy, air force, secret service… even messages from the desk of Hitler himself. Countless thousands upon thousands of communications."
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/bb_darkBackgroundColor"
             android:textSize="14sp" />
 
 

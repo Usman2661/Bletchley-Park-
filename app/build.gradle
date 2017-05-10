@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
     defaultConfig {
-        applicationId "com.example.usman.bletcheypark"
+        applicationId "com.bletchley.usman.bletcheypark"
         minSdkVersion 23
         targetSdkVersion 25
         versionCode 1
@@ -15,9 +15,13 @@ android {
         multiDexEnabled true
     }
     buildTypes {
+        debug {
+            debuggable false
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
         }
     }
 }

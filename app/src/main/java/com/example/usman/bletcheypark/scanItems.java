@@ -36,6 +36,8 @@ public class scanItems extends AppCompatActivity  {
     private ProgressDialog loading;
     Button Read;
     Button Stop;
+    Button Stop2;
+    Button Read2;
     TextToSpeech t1;
     TextToSpeech t2;
 
@@ -50,6 +52,8 @@ public class scanItems extends AppCompatActivity  {
         textViewResult = (TextView) findViewById(R.id.myText);
         Read=(Button)findViewById(R.id.audioButton);
         Stop=(Button)findViewById(R.id.stopAudio);
+        Stop2=(Button)findViewById(R.id.audio2);
+        Read2=(Button)findViewById(R.id.listen2);
 
 
 
@@ -62,6 +66,7 @@ public class scanItems extends AppCompatActivity  {
             }
         });
 
+        //Creating t2 as text to speech reader and settiing the language to English UK
         t2=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -70,16 +75,25 @@ public class scanItems extends AppCompatActivity  {
                 }
             }
         });
-
+        //Action listenner to the listen audio button
         Read.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Creating a string varaible of the text to be read
                 String toSpeak = textViewResult.getText().toString();
-                //Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+                //Passing String Text to the t2 speech variable to read
                 t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
+        Read2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String toSpeak = textViewResult.getText().toString();
+                //Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
+                t2.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
         Read.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,7 +103,16 @@ public class scanItems extends AppCompatActivity  {
             }
         });
 
+
         Stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t1.stop();
+                t2.stop();
+            }
+        });
+
+        Stop2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t1.stop();
@@ -129,24 +152,29 @@ public class scanItems extends AppCompatActivity  {
 
 
     @Override
+    //Method For Scanning the QR Barcode and Retreiving Results of the barcode
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
+        //Creating the intent to retrive the result code data
         IntentResult result=IntentIntegrator.parseActivityResult(requestCode, resultCode,data);
 
+        //If there is no result retrieved from QR barcode
         if (result!=null){
             if (result.getContents()==null){
+                //View the message of cancelling scanning if the user backs from scanning
                 Toast.makeText(this, "You cancelled the scanning", Toast.LENGTH_LONG).show();
                 TextView changeText =(TextView) findViewById(R.id.myText);
 
                 changeText.setText("Hello");
 
             }
+            //this else statemeng will run when the QR Barcode item is scanned
             else {
+                //Showing the results of the retrieved contents of QR barcode
                 Toast.makeText(this, result.getContents(),Toast.LENGTH_LONG).show();
 
                 String myBarcode=result.getContents().toString();
-                //TextView changeText =(TextView) findViewById(R.id.myText);
-                //changeText.setText(myBarcode);
+
 
                 {
                     String id = result.getContents().toString().trim();
@@ -197,7 +225,7 @@ public class scanItems extends AppCompatActivity  {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        textViewResult.setText("Item Name:\t"+name+"\nDescription:\t" +address+ "\nYear Made In:\t"+ vc);
+        textViewResult.setText("Item Name:\t"+name+"\nDescription:\t" + vc+ "\nYear Made In:\t"+address );
     }
 
 

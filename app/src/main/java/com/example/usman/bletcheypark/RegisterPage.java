@@ -96,11 +96,12 @@ public class RegisterPage extends Activity {
             openProfile();
         }
     }
-
+    // Class background using AsyncTask
     class BackGround extends AsyncTask<String, String, String> {
 
         @Override
         protected String doInBackground(String... params) {
+            //Storing the user detail in the string and declaring the param number
             String name = params[1];
             String password = params[2];
             String email = params[3];
@@ -109,11 +110,14 @@ public class RegisterPage extends Activity {
             int tmp;
 
             try {
+                //Declaring register URL in the server
                 URL url = new URL("http://usmanali136.com/registeration.php");
                 String urlParams = "name="+name+"&password="+password+"&email="+email+"&id="+id;
 
+                //Opening the HttpURLC COnnection
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setDoOutput(true);
+                //Creating Output Stream Object
                 OutputStream os = httpURLConnection.getOutputStream();
                 os.write(urlParams.getBytes());
                 os.flush();

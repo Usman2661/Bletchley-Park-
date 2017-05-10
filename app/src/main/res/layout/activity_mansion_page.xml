@@ -5,7 +5,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
 android:layout_height="fill_parent"
-android:background="@drawable/background"
+android:background="@drawable/official2"
 android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
 
 <RelativeLayout
@@ -23,15 +23,17 @@ android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#fff"/>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You are Currently in the Mansion"
-        android:textSize="24sp"
-        android:layout_marginTop="213dp"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/youtube_player"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="213dp"
+        android:text="You are Currently in the Mansion"
+        android:textColor="@color/bb_darkBackgroundColor"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/checkout"
@@ -59,6 +61,7 @@ android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill
         android:layout_below="@+id/checkout"
         android:layout_marginTop="32dp"
         android:text="The Mansion at Bletchley Park houses a number of temporary and permanent exhibitions including:"
+        android:textColor="@color/bb_darkBackgroundColor"
         android:textSize="18sp" />
 
     <TextView
@@ -69,16 +72,18 @@ android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill
         android:layout_below="@+id/textView9"
         android:layout_marginTop="12dp"
         android:text="---The Office of Alastair Denniston, Head of the Government Code and Cypher School, and the room where the US Special Relationship was born"
+        android:textColor="@color/bb_darkBackgroundColor"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="---The Library, atmospherically dressed as it would have looked during WW2 as a Naval Intelligence office"
-        android:textSize="18sp"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/textView18"
-        android:layout_alignParentStart="true" />
+        android:text="---The Library, atmospherically dressed as it would have looked during WW2 as a Naval Intelligence office"
+        android:textColor="@color/bb_darkBackgroundColor"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView24"
@@ -87,17 +92,19 @@ android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView19"
         android:text="------Wartime Garages, complete with WW2 vehicles"
+        android:textColor="@color/bb_darkBackgroundColor"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView24"
         android:layout_marginTop="27dp"
         android:text="Have you seen:"
-        android:textSize="30sp"
-        android:layout_below="@+id/textView24"
-        android:layout_alignParentStart="true" />
+        android:textColor="@color/bb_darkBackgroundColor"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/jn"

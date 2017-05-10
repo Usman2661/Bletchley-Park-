@@ -26,7 +26,7 @@ public class directionsHomepage extends AppCompatActivity {
         Button placePicker=(Button) findViewById(R.id.searchAPI);
         placePicker.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view){
-                Intent intent= new Intent(directionsHomepage.this,MapsActivity2.class);
+                Intent intent= new Intent(directionsHomepage.this,MapsActivity.class);
                 startActivity(intent);
             }
 

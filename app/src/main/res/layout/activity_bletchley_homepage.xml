@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/background3"
+    android:background="@drawable/official1"
     tools:context="com.example.usman.bletcheypark.BletchleyHomepage">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -71,14 +71,14 @@
         android:text="Check In/Out" />
 
     <Button
-        android:text="Directions"
+        android:id="@+id/directionBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/directionBTN"
-        android:layout_below="@+id/button12"
         android:layout_alignParentEnd="true"
         android:layout_alignStart="@+id/button12"
-        android:background="@color/colorAccent" />
+        android:layout_below="@+id/button12"
+        android:background="@color/colorAccent"
+        android:text="Directions" />
 
     <Button
         android:id="@+id/shareButton"

@@ -53,7 +53,7 @@ public class feedUpload extends AppCompatActivity implements View.OnClickListene
         buttonChoose.setOnClickListener(this);
         buttonUpload.setOnClickListener(this);
     }
-
+    //Method to open the gallery for user input of the image to upload
     private void showFileChooser() {
         Intent intent = new Intent();
         intent.setType("image/*");
@@ -62,6 +62,7 @@ public class feedUpload extends AppCompatActivity implements View.OnClickListene
     }
 
     @Override
+    //Creating the on activuty result method
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -84,19 +85,22 @@ public class feedUpload extends AppCompatActivity implements View.OnClickListene
         return encodedImage;
     }
 
-
+    //Method to upload the image and the text
     public void uploadImage(){
+        //Storing the text and the image input form the user in variables
         final String text = editText.getText().toString().trim();
         final String image = getStringImage(bitmap);
         class UploadImage extends AsyncTask<Void,Void,String>{
             ProgressDialog loading;
             @Override
+            //The preexecute method to show the use message to wait.
             protected void onPreExecute() {
                 super.onPreExecute();
                 loading = ProgressDialog.show(feedUpload.this,"Please wait...","uploading",false,false);
             }
 
             @Override
+            //Post execute method to show the succes message if the image has been uploaded succesfully.
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 loading.dismiss();

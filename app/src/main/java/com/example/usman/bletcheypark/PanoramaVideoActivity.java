@@ -369,16 +369,21 @@ public class PanoramaVideoActivity extends FragmentActivity implements PFAssetOb
      * Click listener for the navigation mode (touch/motion (if available))
      *
      */
+
+    //Creating methods to respond to the users touch and the motion sensors on the phone
     private OnClickListener touchListener = new OnClickListener() {
         public void onClick(View v) {
             if (_pfview != null)
             {
+                //Creating the touch button
                 Button touchButton = (Button)findViewById(R.id.touchbutton);
+                //Setting the navigation to the phones motion sensors
                 if (_currentNavigationMode == PFNavigationMode.TOUCH)
                 {
                     _currentNavigationMode = PFNavigationMode.MOTION;
                     touchButton.setText("motion");
                 }
+                //Setting the video navigation on the touch event of the phone
                 else
                 {
                     _currentNavigationMode = PFNavigationMode.TOUCH;

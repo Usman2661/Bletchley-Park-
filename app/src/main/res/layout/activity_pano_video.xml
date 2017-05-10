@@ -64,7 +64,7 @@
             android:dividerHeight="0.3dp"
             android:layout_below="@+id/app_header"
             android:layout_marginTop="10dp"
-            android:background="@drawable/background22"
+            android:background="@drawable/official1"
             />
 
         <!--<AbsoluteLayout
@@ -163,7 +163,7 @@
             android:freezesText="true"
             android:inputType="textMultiLine"
             android:text="Please add 360 degree movies by uploading them to your external storage. Use either a flash card or Android File Transfer to populate your system with movies. The movie files that will show up here, are all the movies on the external storage, including regular ones. Please use videos appropriate for your device."
-            android:textColor="#fff" >
+            android:textColor="@color/bb_darkBackgroundColor">
 
             <requestFocus />
         </EditText>

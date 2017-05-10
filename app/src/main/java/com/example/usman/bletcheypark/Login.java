@@ -48,9 +48,10 @@ import java.util.regex.Pattern;
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
 
-
+    //Declaring the address to the login URL on the server
     public static final String LOGIN_URL = "http://www.usmanali136.com/login.php";
 
+    //Declaring the users name and password Strings
     public static final String KEY_USERNAME="username";
     public static final String KEY_PASSWORD="password";
 
@@ -89,19 +90,26 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
 
     private void userLogin() {
+        //Getting the user input from the email and password field
         username = editTextUsername.getText().toString().trim();
         password = editTextPassword.getText().toString().trim();
 
+        //Creating a new string request to the login URL on the server
         StringRequest stringRequest = new StringRequest(Request.Method.POST, LOGIN_URL,
                 new Response.Listener<String>() {
                     @Override
+
+                    //Method to retrive the response from the server for correct login credentials
                     public void onResponse(String response) {
+                        //Allow login the message returned from server is below
                         if(response.trim().equals("successEmail or Password is Incorrect")) {
                             openProfile();
                         }
+                        //Allow admin login if the message returned from the server is below
                         if (response.trim().equals("admin")) {
                                 openAdmin();
                             }
+                        //Else to show an error message to the user if the credentials are incorrect
                         else{
                             Toast.makeText(Login.this,response,Toast.LENGTH_LONG).show();
                         }

@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/background6"
+    android:background="@drawable/official1"
     tools:context="com.example.usman.bletcheypark.CheckIn">
 
     <Button
@@ -37,7 +37,7 @@
         android:layout_below="@+id/checkIN"
         android:layout_marginTop="19dp"
         android:text="User Activity FAQ........"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/bb_darkBackgroundColor"
         android:textSize="30sp" />
 
     <TextView
@@ -46,8 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView11"
-        android:text="Why is check-in and chec out used?"
-        android:textColor="@color/zxing_viewfinder_laser"
+        android:text="Why is check-in and check out used?"
+        android:textColor="@color/bb_darkBackgroundColor"
         android:textSize="14sp" />
 
     <TextView
@@ -55,7 +55,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView13"
         android:layout_marginTop="51dp"
         android:text="TextView"
         android:textSize="14sp" />
@@ -67,25 +66,26 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/textView12"
         android:text="While at the Museum using the check-in andout feature will alow you to check in to different Places. When you check in to a specific place information regarding that place will be shown"
-        android:textColor="@color/cardview_light_background" />
+        android:textColor="@color/bb_darkBackgroundColor" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView15"
         android:text="Is the data saved?"
-        android:textColor="@color/zxing_viewfinder_laser" />
+        android:textColor="@color/bb_darkBackgroundColor"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView16"
         android:text="Your activity can be tracked via using this feature. This will save the the exact time you spent in different places in the musuem which can be tracked in my user activity. "
-        android:textColor="@color/cardview_light_background" />
+        android:textColor="@color/bb_darkBackgroundColor"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/viewPlaces1"

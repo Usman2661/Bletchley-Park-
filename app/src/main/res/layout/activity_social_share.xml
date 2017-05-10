@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_material_red"
+    android:background="@drawable/official2"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -26,6 +26,7 @@
         android:text="Share On Social Media"
         android:layout_below="@+id/nameText"
         android:layout_alignParentStart="true" />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -34,7 +35,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="176dp"
         android:text="Did you know?"
-        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textColor="@color/bb_darkBackgroundColor"
         android:textSize="24sp" />
 
     <TextView
@@ -44,7 +45,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView6"
         android:text="1.Bletchley Park was the Buckinghamshire house and estate that played host to Britain’s code-breaking triumphs – from the success in breaking the ‘insoluble’ Nazi Enigma codes to its incredible work on Japanese cryptology."
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/bb_darkBackgroundColor"
         android:textSize="14sp" />
 
     <TextView
@@ -55,7 +56,7 @@
         android:layout_below="@+id/textView8"
         android:layout_marginTop="30dp"
         android:text="1.It is simply impossible to know – largely because Bletchley was so mind-bogglingly successful. They read messages from the German army, navy, air force, secret service… even messages from the desk of Hitler himself. Countless thousands upon thousands of communications."
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/bb_darkBackgroundColor"
         android:textSize="14sp" />
 
 

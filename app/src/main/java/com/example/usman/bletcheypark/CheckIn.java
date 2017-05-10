@@ -104,17 +104,18 @@ public class CheckIn extends AppCompatActivity {
 ///                changeText.setText("Hello");
 
             } else {
+                //Retreiving the results of the barcode scanning
                 Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
 
                 String myBarcode = result.getContents().toString();
-               // TextView changeText =(TextView) findViewById(R.id.checkInPlace);
-                //changeText.setText(myBarcode);
 
                 Intent i = getIntent();
                 String tv1= i.getExtras().getString("Email");
-
+                //Creating a new bacground object and then execute it
                 BackGround b=new BackGround();
                 b.execute(myBarcode, "", "", "",tv1);
+
+                //Directing the user to the relevant page based on the barcode scanned
                        if (myBarcode.equals("Mansion")) {
                            openProfile();
                        }

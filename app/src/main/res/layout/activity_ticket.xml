@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background='@drawable/bg27'
+    android:background='@drawable/official1'
     tools:context="com.example.usman.bletcheypark.adminHomepage">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="13dp"
             android:text="Concessions include Over 60s and students with valid ID or 2 adults or  2 children aged 12 to 17 "
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/bb_darkBackgroundColor"
             android:textSize="24sp"
             android:typeface="normal" />
 
@@ -40,7 +40,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="32dp"
             android:text="5.Concessions* – £15.75"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/bb_darkBackgroundColor"
             android:textSize="24sp"
             android:typeface="normal" />
 
@@ -55,7 +55,8 @@
             android:text="4.Family Ticket = £46.25"
             android:textColor="@color/cardview_light_background"
             android:textSize="24sp"
-            android:typeface="normal" />
+            android:typeface="normal"
+            tools:textColor="@color/bb_darkBackgroundColor" />
 
         <TextView
             android:id="@+id/textView40"
@@ -66,7 +67,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="29dp"
             android:text="3.Children under 12 = FREE"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/bb_darkBackgroundColor"
             android:textSize="24sp"
             android:typeface="normal" />
 
@@ -79,7 +80,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="28dp"
             android:text="2.Children 12 to 17  = £10.50"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/bb_darkBackgroundColor"
             android:textSize="24sp"
             android:typeface="normal" />
 
@@ -92,7 +93,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:text="1.Adults Price = £17.75"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/bb_darkBackgroundColor"
             android:textSize="24sp"
             android:typeface="normal" />
 
@@ -104,7 +105,7 @@
             android:layout_alignParentTop="true"
             android:layout_gravity="center_horizontal"
             android:text="Admission/Ticket Prices:"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/bb_darkBackgroundColor"
             android:textSize="30sp"
             android:typeface="monospace" />
     </RelativeLayout>
